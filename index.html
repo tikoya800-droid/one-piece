@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Piece — Accessories by Mena</title>
+    <!-- ربط ملفات الخطوط وأيقونات الموقع -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- ربط ملف التصميم -->
+    <link rel="stylesheet" href="my brand.css">
+</head>
+<body>
+
+    <!-- خلفية متحركة -->
+    <div class="bg-glow" aria-hidden="true">
+        <div class="orb"></div>
+        <div class="orb"></div>
+        <div class="orb"></div>
+    </div>
+
+    <!-- الهيدر والقائمة -->
+    <header>
+        <a href="#" class="onepiece">One Piece</a>
+        <div class="nav-toggle" id="navToggle" aria-label="Toggle navigation" role="button" tabindex="0">
+            <span></span><span></span><span></span>
+        </div>
+        <nav class="navigation" id="navMenu">
+            <a href="#Necklaces">Necklaces</a>
+            <a href="#Bracelets">Bracelets</a>
+            <a href="#Rings">Rings</a>
+            <a href="#earings">Earrings</a>
+            <a href="#hair">Hair</a>
+            <a href="#Bags">Bags</a>
+            <a href="#Special">Leg Accessories</a>
+            <a href="#Others">Others</a>
+            <a href="#Contact" style="color:var(--accent);">Contact</a>
+        </nav>
+        <!-- أيقونة السلة -->
+        <div class="cart-icon" id="cartToggle" aria-label="Open cart" role="button" tabindex="0">
+            <i class="fas fa-shopping-bag"></i>
+            <div class="cart-badge" id="cartBadge">0</div>
+        </div>
+    </header>
+
+    <!-- خلفية السلة والقائمة الجانبية -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-panel" id="cartPanel">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="cart-close" id="cartClose" aria-label="Close cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-body" id="cartBody">
+            <div class="cart-empty">Your cart is empty</div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">0 LE</span>
+            </div>
+            <button class="cart-order-btn" id="cartOrderBtn">Order via WhatsApp</button>
+        </div>
+    </div>
+
+    <!-- مكان ظهور الإشعارات -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- قسم الترحيب -->
+    <section class="main">
+        <div class="lolo">
+            <div class="logo"></div>
+        </div>
+        <div class="lolo2">
+            <h3>Wear a one-of-a-kind piece</h3>
+            <h4>with Mena Hany</h4>
+            <a href="#some help" class="main-btn">Help Me</a>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/mennah.800?igsh=MTFjaXhjN2U4enRxaw==" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/share/18To4AWZoN/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.tiktok.com/@tiko.ya7?_r=1&_t=ZS-95fn97rnxMV" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="https://wa.me/qr/F5U7IF3SVWQCF1" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- قسم الخدمات -->
+    <section class="cards" id="services">
+        <h2 class="title">Services</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon"><i class="fas fa-gem"></i></div>
+                <div class="info"><h3>Special Product</h3></div>
+            </div>
+            <div class="card">
+                <div class="icon"><i class="fas fa-ring"></i></div>
+                <div class="info"><h3>Special Piece</h3></div>
+            </div>
+            <div class="card">
+                <div class="icon"><i class="fas fa-hand-holding-heart"></i></div>
+                <div class="info"><h3>Special Services</h3></div>
+            </div>
+            <div class="card">
+                <div class="icon"><i class="fas fa-shield-alt"></i></div>
+                <div class="info"><h3>After-Selling Support</h3></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- الأقسام الفارغة التي سيتم ملؤها بالجافاسكريبت -->
+    <section class="Necklace" id="Necklaces">
+        <h2 class="title"><u>Necklaces</u></h2>
+        <div class="content" id="necklaceGrid"></div>
+    </section>
+    <div class="section-divider"></div>
+
+    <section class="Bracelet" id="Bracelets">
+        <h2 class="title"><u>Bracelets</u></h2>
+        <div class="content" id="braceletGrid"></div>
+    </section>
+    <div class="section-divider"></div>
+
+    <section class="Ring" id="Rings">
+        <h2 class="title"><u>Rings</u></h2>
+        <div class="content" id="ringGrid"></div>
+    </section>
+    <div class="section-divider"></div>
+
+    <section class="earing" id="earings">
+        <h2 class="title"><u>Earrings</u></h2>
+        <div class="content" id="earingGrid"></div>
+    </section>
+    <div class="section-divider"></div>
+
+    <section class="hair" id="hair">
+        <h2 class="title"><u>Hair Accessories</u></h2>
+        <div class="content" id="hairGrid"></div>
+    </section>
+    <div class="section-divider"></div>
+
+    <section class="Bags" id="Bags">
+        <h2 class="title"><u>Bags</u></h2>
+        <div class="content" id="bagsGrid"></div>
+    </section>
+    <div class="section-divider"></div>
+
+    <section class="Special" id="Special">
+        <h2 class="title"><u>Leg Accessories</u></h2>
+        <div class="content" id="specialGrid"></div>
+    </section>
+    <div class="section-divider"></div>
+
+    <section class="Others" id="Others">
+        <h2 class="title"><u>Others</u></h2>
+        <div class="content" id="othersGrid"></div>
+    </section>
+    <div class="section-divider"></div>
+
+    <section class="some-help-only" id="some help">
+        <h2 class="title"><u>Some Help For You</u></h2>
+        <div class="content" id="helpGrid"></div>
+    </section>
+    <div class="section-divider"></div>
+
+    <!-- قسم التواصل -->
+    <section class="cards contact" id="Contact">
+        <h2 class="title">Let's Creat something special Together</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                <div class="info">
+                    <h3>Phone</h3>
+                    <p>01040015080</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon"><i class="fas fa-envelope"></i></div>
+                <div class="info">
+                    <h3>E-mail</h3>
+                    <p>menah400@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- زر العودة للأعلى -->
+    <a href="#" id="btn" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- ربط ملف البرمجة -->
+    <script src="my brand.js"></script>
+</body>
+</html>
